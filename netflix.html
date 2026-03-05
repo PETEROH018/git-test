@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Who's Watching</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#141414;
+    color:white;
+    text-align:center;
+}
+
+.container{
+    margin-top:100px;
+}
+
+h1{
+    font-size:48px;
+    font-weight:500;
+}
+
+.profiles{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:70px;
+}
+
+.profile{
+    cursor:pointer;
+    transition:transform .9s;
+}
+
+.profile:hover{
+    transform:scale(1.1);
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+}
+
+.blue{background:#2a6ee8;}
+.red{background:#e50914;}
+.yellow{background:#f1c40f;}
+.green{background:#2ecc71;}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.name{
+    margin-top:10px;
+    font-size:16px;
+    color:#aaa;
+}
+
+.lock{
+    font-size:14px;
+    margin-top:4px;
+}
+
+.manage{
+    margin-top:60px;
+}
+
+.manage button{
+    padding:10px 25px;
+    background:transparent;
+    border:1px solid #666;
+    color:#aaa;
+    font-size:14px;
+    letter-spacing:2px;
+    cursor:pointer;
+}
+
+.manage button:hover{
+    border-color:white;
+    color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Who's watching?</h1>
+
+<div class="profiles">
+
+<div class="profile">
+    <div class="avatar blue">☺</div>
+    <div class="name">User 1</div>
+</div>
+
+<div class="profile">
+    <div class="avatar">
+        <img src="https://i.pravatar.cc/150?img=68">
+    </div>
+    <div class="name">User 2</div>
+</div>
+
+<div class="profile">
+    <div class="avatar yellow">☺</div>
+    <div class="name">User 3</div>
+</div>
+
+<div class="profile">
+    <div class="avatar">
+        <img src="https://i.pravatar.cc/150?img=5">
+    </div>
+    <div class="name">User 4</div>
+</div>
+
+<div class="profile">
+    <div class="avatar green">☺</div>
+    <div class="name">User 5</div>
+</div>
+
+</div>
+
+<div class="manage">
+    <button>MANAGE PROFILES</button>
+</div>
+
+</div>
+
+</body>
+</html>
